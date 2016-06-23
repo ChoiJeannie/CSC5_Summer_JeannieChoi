@@ -1,6 +1,6 @@
 /* 
  * File:   main.cpp
- * Author: Dr. Mark E. Lehr
+ * Author: Jeannie Choi
  * Created on June 22, 2016, 1:45 PM
  * Purpose:  Size of all the data types
  */

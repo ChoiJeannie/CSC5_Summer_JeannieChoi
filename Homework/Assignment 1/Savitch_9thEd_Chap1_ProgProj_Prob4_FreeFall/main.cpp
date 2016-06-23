@@ -1,6 +1,6 @@
 /* 
  * File:   main.cpp
- * Author: Dr. Mark E. Lehr
+ * Author: Jeannie Choi
  * Created on June 20, 2016, 9:00 PM
  * Purpose:  Free Fall Problem
  */

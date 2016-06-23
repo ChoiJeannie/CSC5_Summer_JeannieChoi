@@ -1,6 +1,6 @@
 /* 
  * File:   main.cpp
- * Author: Dr. Mark E. Lehr
+ * Author: Jeannie Choi
  * Created on June 21, 2016, 1:33 PM
  * Purpose:  Average
  */

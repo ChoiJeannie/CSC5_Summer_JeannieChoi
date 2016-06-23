@@ -1,6 +1,6 @@
 /* 
  * File:   main.cpp
- * Author: Dr. Mark E. Lehr
+ * Author: Jeannie Choi
  * Created on June 20, 2016, 6:51 PM
  * Purpose:  Use the math Library
  */
