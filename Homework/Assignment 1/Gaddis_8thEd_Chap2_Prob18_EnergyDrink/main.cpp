@@ -29,8 +29,10 @@ int main(int argc, char** argv) {
     citrus = purchased*0.58+0.5;        
     
     //Output the processed Data
-    cout <<"The approximate number of customers in the survey who purchased one or more energy drinks per week is "<<purchased<<"."<<endl;
-    cout <<"The approximate number of customers in the survey who prefer citrus-flavored energy drinks is "<<citrus<<"."<<endl;
+    cout <<"The approximate number of customers in the survey "<<
+            "who purchased one or more energy drinks per week is "<<purchased<<"."<<endl;
+    cout <<"The approximate number of customers in the survey "<<
+            "who prefer citrus-flavored energy drinks is "<<citrus<<"."<<endl;
     
     //Exit Stage Right!
     return 0;

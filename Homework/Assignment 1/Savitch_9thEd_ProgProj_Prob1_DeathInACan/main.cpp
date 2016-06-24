@@ -1,3 +1,4 @@
+
 /* 
  * File:   main.cpp
  * Author: Jeannie Choi
@@ -32,7 +33,7 @@ int main(int argc, char** argv) {
     
     //Output the processed Data
     cout<<"The number of cans that a dieter with mass = ";
-    cout<<hmMass<<"(grams) nay consume is = "<<nCans<<"(cans)";
+    cout<<hmMass<<"(grams) may consume is = "<<nCans<<"(cans)";
     cout<<endl;
     
     //Exit Stage Right!
