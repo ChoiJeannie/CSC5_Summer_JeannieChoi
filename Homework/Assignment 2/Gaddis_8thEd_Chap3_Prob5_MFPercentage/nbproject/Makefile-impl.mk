@@ -24,7 +24,7 @@ CLEAN_SUBPROJECTS=${CLEAN_SUBPROJECTS_${SUBPROJECTS}}
 
 
 # Project Name
-PROJECTNAME=Gaddis_8thEd_Chap3_Prob_MFPercentage
+PROJECTNAME=Gaddis_8thEd_Chap3_Prob5_MFPercentage
 
 # Active Configuration
 DEFAULTCONF=Debug

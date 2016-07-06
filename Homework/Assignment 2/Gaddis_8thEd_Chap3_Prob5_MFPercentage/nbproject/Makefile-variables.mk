@@ -9,11 +9,11 @@ CND_DISTDIR=dist
 # Debug configuration
 CND_PLATFORM_Debug=GNU-MacOSX
 CND_ARTIFACT_DIR_Debug=dist/Debug/GNU-MacOSX
-CND_ARTIFACT_NAME_Debug=gaddis_8thed_chap3_prob_mfpercentage
-CND_ARTIFACT_PATH_Debug=dist/Debug/GNU-MacOSX/gaddis_8thed_chap3_prob_mfpercentage
+CND_ARTIFACT_NAME_Debug=gaddis_8thed_chap3_prob5_mfpercentage
+CND_ARTIFACT_PATH_Debug=dist/Debug/GNU-MacOSX/gaddis_8thed_chap3_prob5_mfpercentage
 CND_PACKAGE_DIR_Debug=dist/Debug/GNU-MacOSX/package
-CND_PACKAGE_NAME_Debug=gaddis8thedchap3probmfpercentage.tar
-CND_PACKAGE_PATH_Debug=dist/Debug/GNU-MacOSX/package/gaddis8thedchap3probmfpercentage.tar
+CND_PACKAGE_NAME_Debug=gaddis8thedchap3prob5mfpercentage.tar
+CND_PACKAGE_PATH_Debug=dist/Debug/GNU-MacOSX/package/gaddis8thedchap3prob5mfpercentage.tar
 # Release configuration
 CND_PLATFORM_Release=Cygwin_4.x-Windows
 CND_ARTIFACT_DIR_Release=dist/Release/Cygwin_4.x-Windows

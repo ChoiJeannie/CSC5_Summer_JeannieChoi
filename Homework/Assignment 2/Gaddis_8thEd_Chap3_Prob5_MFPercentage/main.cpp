@@ -37,10 +37,6 @@ int main(int argc, char** argv) {
     cout<<"\nPercentage of Male students is "<<pMale*100<<"%."<<endl;
     cout<<"Percentage of Female students is "<<pFemale*100<<"%."<<endl;
     
-    
-    
-    
-    
     //Exit Stage Right!
     return 0;
 }

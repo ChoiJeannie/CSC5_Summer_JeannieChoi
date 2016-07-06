@@ -1,16 +1,14 @@
 /* 
  * File:   main.cpp
  * Author: Jeannie Choi
- * Created on June 29, 2016, 1:35 PM
+ * Created on July 5, 2016, 3:23 PM
  * Purpose:  Math Tutor
  */
 
 //System Libraries
 #include <iostream>  //Input/Output Library
-#include <cstdlib>   //Random number function
-#include <ctime>     //Time function
-#include <iomanip>   //Format output
-
+#include <cstdlib>   //Random number library
+#include <ctime>     //Time library to set the random number seed
 using namespace std; //Namespace of the System Libraries
 
 //User Libraries
@@ -21,29 +19,31 @@ using namespace std; //Namespace of the System Libraries
 
 //Execution Begins Here!
 int main(int argc, char** argv) {
+    //Set the random number seed
+    srand(static_cast<unsigned int>(time(0)));
     //Declare Variables
-    unsigned short randOne;//random number 1
-    unsigned short randTwo;//random number 2
-    unsigned short sum;    //Sum of two random numbers
-    char ch;               //any key
+    unsigned short random1,random2,result;
+    unsigned short answer;
     
     //Input Data
-    srand(static_cast<unsigned int>(time(0)));
+    random1=rand()%900+100;//Random 3 digit number
+    random2=rand()%900+100;//Random 3 digit number
+    result=random1+random2;
     
-    //Process the Data
-    randOne=rand()%1000+1;//random number [1,1000]
-    randTwo=rand()%1000+1;//random number [1,1000]
-    sum= randOne+randTwo; //sum [2,2000]
+    //Display the problem
+    cout<<"Calculate the result of the following problem!"<<endl;
+    cout<<"Line up and type the result"<<endl;
+    cout<<"   "<<random1<<endl;
+    cout<<" + "<<random2<<endl;
+    cout<<"-------"<<endl;
+    cin>>answer;
     
-    //Output the processed Data
-    cout<<"Solve the following:\n\n";
-    cout<<setw(4)<<randOne<<endl;
-    cout<<setw(1)<<"+"<<randTwo<<endl;
-    cout<<"------\n\n";
-    cout<<"Press ENTER to check the answer\n";
-    ch = cin.get();       
-    cout<<sum<<endl;        
-    
+    //Output and Process the Data
+    if(result-answer==0){
+        cout<<endl<<"Your answer is correct!"<<endl;
+    }else{
+        cout<<endl<<"Wrong the answer was "<<result<<endl;
+    }
     
     //Exit Stage Right!
     return 0;

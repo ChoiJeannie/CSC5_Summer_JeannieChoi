@@ -17,11 +17,11 @@ CND_PACKAGE_PATH_Debug=dist/Debug/GNU-MacOSX/package/gaddis8thedchap3prob17matht
 # Release configuration
 CND_PLATFORM_Release=Cygwin_4.x-Windows
 CND_ARTIFACT_DIR_Release=dist/Release/Cygwin_4.x-Windows
-CND_ARTIFACT_NAME_Release=template
-CND_ARTIFACT_PATH_Release=dist/Release/Cygwin_4.x-Windows/template
+CND_ARTIFACT_NAME_Release=gaddis_8thed_chap3_prob17_mathtutor
+CND_ARTIFACT_PATH_Release=dist/Release/Cygwin_4.x-Windows/gaddis_8thed_chap3_prob17_mathtutor
 CND_PACKAGE_DIR_Release=dist/Release/Cygwin_4.x-Windows/package
-CND_PACKAGE_NAME_Release=template.tar
-CND_PACKAGE_PATH_Release=dist/Release/Cygwin_4.x-Windows/package/template.tar
+CND_PACKAGE_NAME_Release=gaddis8thedchap3prob17mathtutor.tar
+CND_PACKAGE_PATH_Release=dist/Release/Cygwin_4.x-Windows/package/gaddis8thedchap3prob17mathtutor.tar
 #
 # include compiler specific variables
 #

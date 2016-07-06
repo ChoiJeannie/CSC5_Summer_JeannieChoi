@@ -13,9 +13,9 @@ CND_BUILDDIR=build
 CND_DLIB_EXT=dylib
 NBTMPDIR=${CND_BUILDDIR}/${CND_CONF}/${CND_PLATFORM}/tmp-packaging
 TMPDIRNAME=tmp-packaging
-OUTPUT_PATH=${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/gaddis_8thed_chap3_prob_mfpercentage
-OUTPUT_BASENAME=gaddis_8thed_chap3_prob_mfpercentage
-PACKAGE_TOP_DIR=gaddis8thedchap3probmfpercentage/
+OUTPUT_PATH=${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/gaddis_8thed_chap3_prob5_mfpercentage
+OUTPUT_BASENAME=gaddis_8thed_chap3_prob5_mfpercentage
+PACKAGE_TOP_DIR=gaddis8thedchap3prob5mfpercentage/
 
 # Functions
 function checkReturnCode
@@ -60,15 +60,15 @@ mkdir -p ${NBTMPDIR}
 
 # Copy files and create directories and links
 cd "${TOP}"
-makeDirectory "${NBTMPDIR}/gaddis8thedchap3probmfpercentage/bin"
+makeDirectory "${NBTMPDIR}/gaddis8thedchap3prob5mfpercentage/bin"
 copyFileToTmpDir "${OUTPUT_PATH}" "${NBTMPDIR}/${PACKAGE_TOP_DIR}bin/${OUTPUT_BASENAME}" 0755
 
 
 # Generate tar file
 cd "${TOP}"
-rm -f ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/package/gaddis8thedchap3probmfpercentage.tar
+rm -f ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/package/gaddis8thedchap3prob5mfpercentage.tar
 cd ${NBTMPDIR}
-tar -vcf ../../../../${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/package/gaddis8thedchap3probmfpercentage.tar *
+tar -vcf ../../../../${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/package/gaddis8thedchap3prob5mfpercentage.tar *
 checkReturnCode
 
 # Cleanup
