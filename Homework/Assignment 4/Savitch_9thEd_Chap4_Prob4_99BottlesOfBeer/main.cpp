@@ -1,8 +1,8 @@
 /* 
  * File:   main.cpp
  * Author: Jeannie Choi
- * Created on July 6, 2016, 12:27 PM
- * Purpose:  Template
+ * Created on July 6th, 2016, 12:28 PM
+ * Purpose:  99 Bottles of Beer
  */
 
 //System Libraries
@@ -21,12 +21,17 @@ int main(int argc, char** argv) {
     
     //Input Data
     
-    //Process the Data and Output
-    for(int bottles;bottles>=0;bottles--){
+    //Process the Data and output
+    for(int bottles=99;bottles>=1;bottles--){
         //Calculate tens and ones
         int nTens=(bottles-bottles%10)/10;//Number of 10's
-        int nOnes=bottles-nTens*10;       //Number of 1's
-        for(int times=1;times<=2;times++){
+        int nOnes=bottles-nTens*10;//Number of 1's
+        for(int times=1;times<=3;times++){
+            if(times==3){
+                int temp=bottles-1;
+                nTens=(temp-temp%10)/10;//Number of 10's
+                nOnes=temp-nTens*10;//Number of 1's
+            }
             switch(nTens){
                 case 9:cout<<"Ninety ";break;
                 case 8:cout<<"Eighty ";break;
@@ -48,9 +53,9 @@ int main(int argc, char** argv) {
                         case 7:cout<<"Seventeen ";break;
                         case 8:cout<<"Eighteen ";break;
                         case 9:cout<<"Nineteen ";break;
-
                     }
                 }
+            }
             if(nTens!=1){
                 switch(nOnes){
                     case 0:if(nTens==0)cout<<"Zero ";break;
@@ -63,18 +68,16 @@ int main(int argc, char** argv) {
                     case 7:cout<<"Seven ";break;
                     case 8:cout<<"Eight ";break;
                     case 9:cout<<"Nine ";break;
-
-                   }
-               }
-           }
-                   }
-        if(times==1)" bottles of beer on the wall "<<endl;
-        else if(times==2){
-            cout<<" bottles of beer."<<endl;
-            cout<<" You take one down and pass it around "<<endl;
-        }
+                }
+            }
+            if(times==1||times==3)cout<<" bottles of beer on the wall "<<endl;
+            else if(times==2){
+                cout<<" bottles of beer."<<endl;
+                cout<<" You take one down and pass it around "<<endl;
+            }
+        }   
         cout<<endl;
-   }
+    }
     
     //Exit Stage Right!
     return 0;

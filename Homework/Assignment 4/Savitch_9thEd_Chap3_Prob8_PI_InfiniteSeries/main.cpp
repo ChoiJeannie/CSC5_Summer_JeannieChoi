@@ -1,8 +1,8 @@
 /* 
  * File:   main.cpp
  * Author: Jeannie Choi
- * Created on July 6, 2016, 1:13 PM
- * Purpose:  PI infinite Series
+ * Created on July 6th, 2016, 1:13 PM
+ * Purpose:  Pi Infinite Series
  */
 
 //System Libraries
@@ -29,7 +29,7 @@ int main(int argc, char** argv) {
     tol=pow(10,-tol);
     cout<<"The tolerance = "<<tol<<endl;
     
-    //Process the Data 
+    //Process the Data
     float sumTerm=1;
     int nTerm=0;
     for(int denom=1;sumTerm>tol;nTerm+=2,denom+=4){
