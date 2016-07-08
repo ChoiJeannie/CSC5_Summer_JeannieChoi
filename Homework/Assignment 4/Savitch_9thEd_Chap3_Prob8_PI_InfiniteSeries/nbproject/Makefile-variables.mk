@@ -9,11 +9,11 @@ CND_DISTDIR=dist
 # Debug configuration
 CND_PLATFORM_Debug=GNU-MacOSX
 CND_ARTIFACT_DIR_Debug=dist/Debug/GNU-MacOSX
-CND_ARTIFACT_NAME_Debug=savitch_9thed_chap3_prob8_pi_infiniteseries_1
-CND_ARTIFACT_PATH_Debug=dist/Debug/GNU-MacOSX/savitch_9thed_chap3_prob8_pi_infiniteseries_1
+CND_ARTIFACT_NAME_Debug=savitch_9thed_chap3_prob8_pi_infiniteseries
+CND_ARTIFACT_PATH_Debug=dist/Debug/GNU-MacOSX/savitch_9thed_chap3_prob8_pi_infiniteseries
 CND_PACKAGE_DIR_Debug=dist/Debug/GNU-MacOSX/package
-CND_PACKAGE_NAME_Debug=savitch9thedchap3prob8piinfiniteseries1.tar
-CND_PACKAGE_PATH_Debug=dist/Debug/GNU-MacOSX/package/savitch9thedchap3prob8piinfiniteseries1.tar
+CND_PACKAGE_NAME_Debug=savitch9thedchap3prob8piinfiniteseries.tar
+CND_PACKAGE_PATH_Debug=dist/Debug/GNU-MacOSX/package/savitch9thedchap3prob8piinfiniteseries.tar
 # Release configuration
 CND_PLATFORM_Release=Cygwin_4.x-Windows
 CND_ARTIFACT_DIR_Release=dist/Release/Cygwin_4.x-Windows
