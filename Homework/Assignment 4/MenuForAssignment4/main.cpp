@@ -28,7 +28,7 @@ int main(int argc, char** argv) {
     char choice;
     
     //Input Data
-    cout<<"Menu Program for Assignment 4"<<endl;
+    cout<<"Menu Program for Assignment 4:"<<endl;
     cout<<"Choose one homework to view"<<endl<<endl;
     cout<<"Type 1 to view Celsius to Fahrenheit Table"<<endl;
     cout<<"Type 2 to view Characters of ASCII Codes"<<endl;

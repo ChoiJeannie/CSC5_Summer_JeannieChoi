@@ -1,8 +1,8 @@
 /* 
  * File:   main.cpp
  * Author: Jeannie Choi
- * Created on July 7th, 2016, 2:41 PM
- * Purpose:  Characters for ASCII Codes
+ * Created on July 11th, 2016, 9:53 PM
+ * Purpose:  Pop Quiz
  */
 
 //System Libraries
@@ -17,13 +17,18 @@ using namespace std; //Namespace of the System Libraries
 
 //Execution Begins Here!
 int main(int argc, char** argv) {
-    //Loop and Output the Data
-    cout<<"The Characters for the ASCII Codes 0 through 127: "<<endl;
-    for (int code=0;code<=127;code++){
-        cout<<(char)code<<" ";
-        if(code%16==0)
-        cout<<endl;
+    //Declare Variables
+    int sum=1;
+    //Input Data
+    
+    //Process the Data
+    for(int x=1;x<=10;x++){
+        sum+=x;
+        cout<<sum<<endl;
+
     }
+    
+    //Output the processed Data
     
     //Exit Stage Right!
     return 0;
