@@ -1,15 +1,8 @@
-/* 
- * File:   main.cpp
- * Author: Jeannie Choi
- * Created on July 11th, 2016, 7:46 PM
- * Purpose:  Project 1: Tic-Tac-Toe Game
- */
-
 /*
  * File:   main.cpp
  * Author: Jeannie Choi
  * Created on July 11th, 2016, 7:46 PM
- * Purpose:  Tic-Tac-Toe Game
+ * Purpose: Project 1: Tic-Tac-Toe Game
  */
 
 //System Libraries
@@ -40,8 +33,8 @@ int main(int argc, char** argv) {
     //Declare Variables
     char choice;
     string fName,lName;
-    short win=0,loss=0,tie=0;
-
+    unsigned short winNum,loss,tie;
+    
     //Input Data
     cout<<"Welcome to Tic-Tac-Toe Game!"<<endl;
     cout<<"What is your first Name?"<<endl;
@@ -49,28 +42,32 @@ int main(int argc, char** argv) {
     cout<<"What is your last Name?"<<endl;
     cin>>lName;
     
-    cout<<"Hi "<<fName<<", Choose An Option: \n"<<endl;
+    cout<<"Hello "<<fName<<" "<<lName<<", Choose An Option: \n"<<endl;
     cout<<"Type 1 to PLAY"<<endl;
     cout<<"Type 2 to QUIT"<<endl;
     cin>>choice;
-
+    
     //Process the Data
     switch(choice){
         case '1':{
             //Declare Variables
             char square1('1'),square2('2'),square3('3'),square4('4'),square5('5'),
-            square6('6'),square7('7'),square8('8'),square9('9');
+                 square6('6'),square7('7'),square8('8'),square9('9');
             int  player=1;
             bool over(true);
             
-            //Game Loop
+            //Game loop
             do{
                 //Setting Tic-Tac-Toe Game Board
-                cout<<square1<<"|"<<square2<<"|"<<square3<<endl;
-                cout<<"-+-+-"<<endl;
-                cout<<square4<<"|"<<square5<<"|"<<square6<<endl;
-                cout<<"-+-+-"<<endl;
-                cout<<square7<<"|"<<square8<<"|"<<square9<<endl;
+                cout<<"|"<<square1<<"|"<<square2<<"|"<<square3<<"|"<<endl;
+                for(int i=1;i<=3;i++)//cout<<"+-+-+-+"<<endl;
+                cout<<"+-";
+                cout<<"+"<<endl;
+                cout<<"|"<<square4<<"|"<<square5<<"|"<<square6<<"|"<<endl;
+                for(int i=1;i<=3;i++)//cout<<"+-+-+-+"<<endl;
+                cout<<"+-";
+                cout<<"+"<<endl;
+                cout<<"|"<<square7<<"|"<<square8<<"|"<<square9<<"|"<<endl;
                 
                 //Assigning Player The Game Marker
                 char mark;
@@ -79,51 +76,51 @@ int main(int argc, char** argv) {
                 }else{
                     mark='O';
                 }
-                bool move;
                 
-                //Player's Move
-                int next;
+                //Player's Move 
+                bool move;
+                char next;
                 if(player==1){
-                    for(next=1;next<=9;next++){
+                    do{
                         cout<<"Your turn: "<<endl;
                         cin>>next;
                         move=true;
-                        //Check for a valid move
-                        if     (next==1&&square1=='1'){square1=mark;}
-                        else if(next==2&&square2=='2'){square2=mark;}
-                        else if(next==3&&square3=='3'){square3=mark;}
-                        else if(next==4&&square4=='4'){square4=mark;}
-                        else if(next==5&&square5=='5'){square5=mark;}
-                        else if(next==6&&square6=='6'){square6=mark;}
-                        else if(next==7&&square7=='7'){square7=mark;}
-                        else if(next==8&&square8=='8'){square8=mark;}
-                        else if(next==9&&square9=='9'){square9=mark;}
-                        else{cout<<"Try different move."<< endl;
+                        
+                        //Check if the move is valid
+                        if     (next=='1'&&square1=='1'){square1=mark;}
+                        else if(next=='2'&&square2=='2'){square2=mark;}
+                        else if(next=='3'&&square3=='3'){square3=mark;}
+                        else if(next=='4'&&square4=='4'){square4=mark;}
+                        else if(next=='5'&&square5=='5'){square5=mark;}
+                        else if(next=='6'&&square6=='6'){square6=mark;}
+                        else if(next=='7'&&square7=='7'){square7=mark;}
+                        else if(next=='8'&&square8=='8'){square8=mark;}
+                        else if(next=='9'&&square9=='9'){square9=mark;}
+                        else{cout<<"Try again."<< endl;
                             move=false;}
                      }while(!move);
                 }
                 //Computer's Move
                 else if(player==2){
-                    cout<<"Computer's turn:"<<endl;
-        
-                    //Check for a valid move
-                        do{  
+                    cout<<"Computer's turn: "<<endl;
+                    //Check if the move is valid
+                        do {
                             int random=49+(rand()%(57-49+1));
                             next=random;
                             move=true;
-                        if     (next==1&&square1=='1'){square1=mark;}
-                        else if(next==2&&square2=='2'){square2=mark;}
-                        else if(next==3&&square3=='3'){square3=mark;}
-                        else if(next==4&&square4=='4'){square4=mark;}
-                        else if(next==5&&square5=='5'){square5=mark;}
-                        else if(next==6&&square6=='6'){square6=mark;}
-                        else if(next==7&&square7=='7'){square7=mark;}
-                        else if(next==8&&square8=='8'){square8=mark;}
-                        else if(next==9&&square9=='9'){square9=mark;}
+                        if     (next=='1'&&square1=='1'){square1=mark;}
+                        else if(next=='2'&&square2=='2'){square2=mark;}
+                        else if(next=='3'&&square3=='3'){square3=mark;}
+                        else if(next=='4'&&square4=='4'){square4=mark;}
+                        else if(next=='5'&&square5=='5'){square5=mark;}
+                        else if(next=='6'&&square6=='6'){square6=mark;}
+                        else if(next=='7'&&square7=='7'){square7=mark;}
+                        else if(next=='8'&&square8=='8'){square8=mark;}
+                        else if(next=='9'&&square9=='9'){square9=mark;}
                         else{move=false;}
                         }while(!move);
                 }
-                
+                  
                 over    =false;
                 bool win=true;
                 
@@ -158,49 +155,49 @@ int main(int argc, char** argv) {
                         over=true;
                     }
                 }
-                //Checking If The Game Board Is Full
-                //Neither The Player Nor The Computer
+                //Neither the player nor the computer wins
                 if(square1!='1'&&square2!='2'&&square3!='3'&&
                    square4!='4'&&square5!='5'&&square6!='6'&&
                    square7!='7'&&square8!='8'&&square9!='9'&&!over){
                     over=true;
-                    win =false;
+                    win=false;
                 }
                 
+                //Game Over
+                char again;
                 if(over){
                     if(win){
                         if(player==1)
-                            cout<<fName<<" win!"<<endl;
-                        else
-                            cout<<"The computer wins!"<< endl;
+                            cout<<fName<<"'s win!"<<endl;
+                        else cout<<"The computer wins!"<<endl;
                     }
-        
                     if(win==false)
-                        ++tie;
+                        tie++;
                     else if(player==1)
-                        ++win;
+                        winNum++;
                     else if(player==2)
-                        ++loss;
+                        loss++;
                     
-                    // Print ending board
-                    char again;
-                    cout<<square1<<"|"<<square2<<"|"<<square3<<endl;
-                    cout<<"-+-+-"<<endl;
-                    cout<<square4<<"|"<<square5<<"|"<<square6<<endl;
-                    cout<<"-+-+-"<<endl;
-                    cout<<square7<<"|"<<square8<<"|"<<square9<<endl;
+                    cout<<"|"<<square1<<"|"<<square2<<"|"<<square3<<"|"<<endl;
+                    for(int i=1;i<=3;i++)//cout<<"+-+-+-+"<<endl;
+                        cout<<"+-";
+                    cout<<"+"<<endl;
+                    cout<<"|"<<square4<<"|"<<square5<<"|"<<square6<<"|"<<endl;
+                    for(int i=1;i<=3;i++)//cout<<"+-+-+-+"<<endl;
+                        cout<<"+-";
+                    cout<<"+"<<endl;
+                    cout<<"|"<<square7<<"|"<<square8<<"|"<<square9<<"|"<<endl;
                     
                     cout<<"G A M E O V E R"<<endl;
-                    cout<<"Win: "<<win<<endl;
-                    cout<<"Loss: "<<loss<<endl;
-                    cout<<"Tie: "<<tie<<endl;
+                    cout<<"Win:"<<setw(3)<<winNum<<endl;
+                    cout<<"Loss:"<<setw(2)<<loss<<endl;
+                    cout<<"Tie:"<<setw(3)<<tie<<endl;
                     cout<<"Would you like to play again? Type (y/n)"<<endl;
                     cin>>again;
-                    cout<<endl;
                     
                     if(again=='y'){
                         over=false;
-                        //New Board
+                        //Setting new board
                         square1='1';
                         square2='2';
                         square3='3';
@@ -221,6 +218,7 @@ int main(int argc, char** argv) {
                     }
                 }
             }while(!over);
+            
             //Exit the switch
             break;
         }
@@ -229,14 +227,14 @@ int main(int argc, char** argv) {
             //Exit the switch
             break;            
         }
-        default:cout<<"Not option in menu"<<endl;
+        default:cout<<"Not option in menu."<<endl;
     }
     
     //Output the processed Data
-    out<<"Total Wins: "<<win<<endl;
-    out<<"Total Losses: "<<loss<<endl;
-    out<<"Total Ties: "<<tie<<endl;
     out.close();
+    out<<"Win:"<<setw(3)<<winNum<<endl;
+    out<<"Loss:"<<setw(2)<<loss<<endl;
+    out<<"Tie:"<<setw(3)<<tie<<endl;
     
     //Exit Stage Right!
     return 0;
