@@ -205,11 +205,11 @@ int main(int argc, char** argv) {
     
     
     //Output stats of the player
-    out.close();
+
     out<<"Win:"<<setw(3)<<winNum<<endl;
     out<<"Loss:"<<setw(2)<<loss<<endl;
     out<<"Tie:"<<setw(3)<<tie<<endl;
- 
+    out.close();
     
     //Exit Stage Right!
     return 0;
