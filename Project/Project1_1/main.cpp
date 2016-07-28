@@ -2,7 +2,7 @@
  * File:   main.cpp
  * Author: Jeannie Choi
  * Created on July 11th, 2016, 7:46 PM
- * Purpose: Project 1: Tic-Tac-Toe Game
+ * Purpose: Tic-Tac-Toe Game
  */
 
 //System Libraries
