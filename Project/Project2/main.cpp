@@ -36,7 +36,7 @@ int main(int argc, char** argv) {
     //Declare Variables
     char choice;
     string fName,lName;
-    int const SIZE=9;
+    const int SIZE=9;
     char square[SIZE]={'1','2','3','4','5','6','7','8','9'};
     /*char square1('1'),square2('2'),square3('3'),square4('4'),square5('5'),
     square6('6'),square7('7'),square8('8'),square9('9');*/
