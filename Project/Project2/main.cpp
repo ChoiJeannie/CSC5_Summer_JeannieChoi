@@ -22,7 +22,7 @@ using namespace std; //Namespace of the System Libraries
 void prntBrd(char[],const int);
 void chkMove(char,bool &,char,char[],const int);
 void chkOver(char[],int const,bool &,bool &);
-void sortBrd(char[],const int);
+void sortBrd();
 
 //Execution Begins Here!
 int main(int argc, char** argv) {
@@ -310,7 +310,7 @@ void chkOver(char square[],const int SIZE,bool &win,bool &over){
     }
 }
 
-void sortBrd(char num[],const int SIZE){
+void sortBrd(){
     //Declare Variables
 
     
