@@ -9,7 +9,6 @@
 #include <iostream>  //Input/Output Library
 #include <ctime>     //Time for random seed
 #include <cstdlib>   //Random number seed
-#include <iomanip>   //Formatting
 #include <fstream>   //File I/O
 #include <string>    //String Object
 

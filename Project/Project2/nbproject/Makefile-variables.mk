@@ -9,11 +9,11 @@ CND_DISTDIR=dist
 # Debug configuration
 CND_PLATFORM_Debug=GNU-MacOSX
 CND_ARTIFACT_DIR_Debug=dist/Debug/GNU-MacOSX
-CND_ARTIFACT_NAME_Debug=project1_1_1_1
-CND_ARTIFACT_PATH_Debug=dist/Debug/GNU-MacOSX/project1_1_1_1
+CND_ARTIFACT_NAME_Debug=project2
+CND_ARTIFACT_PATH_Debug=dist/Debug/GNU-MacOSX/project2
 CND_PACKAGE_DIR_Debug=dist/Debug/GNU-MacOSX/package
-CND_PACKAGE_NAME_Debug=project1111.tar
-CND_PACKAGE_PATH_Debug=dist/Debug/GNU-MacOSX/package/project1111.tar
+CND_PACKAGE_NAME_Debug=project2.tar
+CND_PACKAGE_PATH_Debug=dist/Debug/GNU-MacOSX/package/project2.tar
 # Release configuration
 CND_PLATFORM_Release=Cygwin_4.x-Windows
 CND_ARTIFACT_DIR_Release=dist/Release/Cygwin_4.x-Windows
