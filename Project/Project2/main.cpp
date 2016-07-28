@@ -11,6 +11,7 @@
 #include <cstdlib>   //Random number seed
 #include <fstream>   //File I/O
 #include <string>    //String Object
+#include <iomanip>   //Formatting
 
 using namespace std; //Namespace of the System Libraries
 
@@ -141,9 +142,9 @@ int main(int argc, char** argv) {
                     prntBrd(square, SIZE);
                     
                     cout<<"G A M E O V E R"<<endl;
-                    cout<<"Win: "<<winNum<<endl;
-                    cout<<"Loss: "<<loss<<endl;
-                    cout<<"Tie: "<<tie<<endl;
+                    cout<<"Win:"<<setw(3)<<winNum<<endl;
+                    cout<<"Loss:"<<setw(2)<<loss<<endl;
+                    cout<<"Tie:"<<setw(3)<<tie<<endl;
                     cout<<"Would you like to play again? Type (y/n)"<<endl;
                     char again;
                     cin>>again;
@@ -203,13 +204,11 @@ int main(int argc, char** argv) {
     
     
     //Output stats of the player
-    out<<"Win: "<<winNum<<endl;
-    out<<"Loss: "<<loss<<endl;
-    out<<"Tie: "<<tie<<endl;
- 
-    
-    //Output the processed Data
     out.close();
+    out<<"Win:"<<setw(3)<<winNum<<endl;
+    out<<"Loss:"<<setw(2)<<loss<<endl;
+    out<<"Tie:"<<setw(3)<<tie<<endl;
+ 
     
     //Exit Stage Right!
     return 0;
