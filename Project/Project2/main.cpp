@@ -23,7 +23,7 @@ using namespace std; //Namespace of the System Libraries
 void prntBrd(char[],const int);
 void chkMove(char,bool &,char,char[],const int);
 void chkOver(char[],int const,bool &,bool &);
-void sortBrd();
+void sortBrd(char[],const int);
 
 //Execution Begins Here!
 int main(int argc, char** argv) {
@@ -164,8 +164,9 @@ int main(int argc, char** argv) {
                         square[7]='2';
                         square[8]='1';
                         
-                        //Will call a function that sorts the numbers on board
+                        //Call a function that sorts the numbers on board
                         
+                        sortBrd(square,SIZE);
                         /*square[0]='1';
                          square[1]='2';
                          square[2]='3';
@@ -273,7 +274,7 @@ void chkOver(char square[],const int SIZE,bool &win,bool &over){
         if(square[1]==square[0]&&square[2]==square[0]){
             over=true;
         }
-        if(square[3]==square[0]&&square[6]==square[0]){
+        else if(square[3]==square[0]&&square[6]==square[0]){
             over=true;
         }
     }
@@ -281,21 +282,21 @@ void chkOver(char square[],const int SIZE,bool &win,bool &over){
         if(square[0]==square[4]&&square[8]==square[4]){
             over=true;
         }
-        if(square[1]==square[4]&&square[7]==square[4]){
+        else if(square[1]==square[4]&&square[7]==square[4]){
             over=true;
         }
-        if(square[3]==square[4]&&square[5]==square[4]){
+        else if(square[3]==square[4]&&square[5]==square[4]){
             over=true;
         }
-        if(square[2]==square[4]&&square[6]==square[4]){
-            over = true;
+        else if(square[2]==square[4]&&square[6]==square[4]){
+            over=true;
         }
     }
     if(square[8]!='9'){
         if(square[2]==square[8]&&square[5]==square[8]){
             over=true;
         }
-        if(square[6]==square[8]&&square[7]==square[8]){
+        else if(square[6]==square[8]&&square[7]==square[8]){
             over=true;
         }
     }
@@ -309,8 +310,23 @@ void chkOver(char square[],const int SIZE,bool &win,bool &over){
     }
 }
 
-void sortBrd(){
+void sortBrd(char num[],const int SIZE){
     //Declare Variables
-
+    int i,j,flag=1;
+    int temp;
+    int length=SIZE;
+    
+    //Loop to sort numbers on the game board
+    for(i=1;(i<=length)&&flag;i++){
+        flag=0;
+        for(j=0;j<(length-1);j++){
+            if(num[j+1]<num[j]){
+                temp=num[j];
+                num[j]=num[j+1];
+                num[j+1]=temp;
+                flag=1;
+            }
+        }
+    }
     
 }
